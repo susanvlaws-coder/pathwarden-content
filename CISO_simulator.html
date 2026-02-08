@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pathwarden | CISO Simulator</title>
+    <title>SecureTech AI | CISO Simulator</title>
     <style>
         :root {
+            /* BRANDING: SecureTech AI Theme */
             --bg-color: #1a1a2e;
             --panel-color: #16213e;
             --text-color: #e0e0e0;
-            --accent-cyan: #4db8ff;
+            --accent-cyan: #4db8ff;  /* Tech Blue */
             --safe-green: #2ecc71;
             --risky-red: #e74c3c;
             --border-color: #2c3e50;
@@ -153,6 +154,7 @@
         .final-cta-btn {
              background-color: var(--accent-cyan); color: var(--bg-color); text-decoration: none; font-weight: bold;
              padding: 15px 30px; border-radius: 5px; display: inline-block; margin-top: 20px; font-size: 1.1rem; transition: background 0.2s;
+             cursor: pointer;
         }
         .final-cta-btn:hover { background: #3a9bd8; box-shadow: 0 0 15px rgba(77, 184, 255, 0.4);}
 
@@ -162,7 +164,7 @@
 </head>
 <body>
 
-    <div class="brand-logo">PATHWARDEN</div>
+    <div class="brand-logo">SECURETECH AI</div>
     <h1>The CISO Simulator</h1>
     <p class="subtitle">Objective: Navigate 4 quarters. Lower your Risk Score without bankrupting the company. Strategy beats spending.</p>
 
@@ -194,7 +196,7 @@
     </div>
 
     <div class="footer">
-        © Pathwarden. Secure by Design.
+        © SecureTech AI. Secure by Design.
     </div>
 
     <div class="modal-overlay" id="resultModal">
@@ -237,7 +239,7 @@
                         outcomeText: "They are bright, but lack experience. They are drowning in alerts and can't focus on strategy. Better than nothing. <br><br><span class='stat-change risk-down'>Risk: -10</span>"
                     },
                     {
-                        title: "Retain Fractional CISO (Pathwarden)",
+                        title: "Retain Fractional CISO (SecureTech AI)",
                         desc: "Hire strategic leadership part-time to build a roadmap and policy.",
                         cost: 25,
                         riskChange: -25,
@@ -453,7 +455,9 @@
                 </div>
                 <p class="outcome-text">${finalMessage}</p>
                 <p style="color:#888; font-size:0.9rem;">Don't play games with your real budget.</p>
-                <a href="https://pathwarden.com" target="_blank" class="final-cta-btn">Hire a Pathwarden vCISO</a>
+                
+                <a href="#" onclick="return false;" class="final-cta-btn">Hire a SecureTech AI vCISO</a>
+                
                 <button class="next-btn" style="background:#333; margin-top:15px;" onclick="restartGame()">Restart Sim ↻</button>
             `;
             resultModalUI.style.display = 'flex';
